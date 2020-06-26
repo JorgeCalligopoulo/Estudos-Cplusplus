@@ -119,7 +119,7 @@ int main()
 	std::cout << numI2 << numI1 << numI;
 	system("pause");
 	system("cls");
-	
+	//
 
 
 }

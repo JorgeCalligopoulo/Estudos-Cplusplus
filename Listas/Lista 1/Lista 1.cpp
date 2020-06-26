@@ -1,11 +1,11 @@
 // Lista 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include <iostream>
 
-int numI, numI1, numI2, res;
+int numI, numI1, numI2, numI3, res;
 float numF, numF1, numF2, numF3;
 int main()
 {
-	numI = numI1 = numI2 = numF = numF1 = numF2 = numF3 = 0;
+	numI = numI1 = numI2 = numI3 = numF = numF1 = numF2 = numF3 = 0;
 	
 	std::cout << "01\n"; //01
 
@@ -15,6 +15,8 @@ int main()
 	system("pause");
 	system("cls");
 
+
+
 	std::cout << "02\n"; //02
 
 	std::cout << "Digite um numero REAL!\n";
@@ -22,6 +24,8 @@ int main()
 	std::cout << "O numero digitado foi: " << numF << "\n";
 	system("pause");
 	system("cls");
+
+
 
 	std::cout << "03\n"; //03
 
@@ -40,6 +44,8 @@ int main()
 	system("pause");
 	system("cls");
 
+
+
 	std::cout << "04\n"; //04
 
 	std::cout << "Digite um numero REAL!\n";
@@ -49,6 +55,8 @@ int main()
 	system("pause");
 	system("cls");
 
+
+
 	std::cout << "05\n"; //5
 
 	std::cout << "Digite um numero REAL!\n";
@@ -56,6 +64,8 @@ int main()
 	std::cout << "A quinta parte do numero digitado e: " << numF/5 << "\n";
 	system("pause");
 	system("cls");
+
+
 
 	std::cout << "06\n"; //6
 
@@ -65,6 +75,8 @@ int main()
 	system("pause");
 	system("cls");
 
+
+
 	std::cout << "07\n"; //7
 
 	std::cout << "Digite a temperatua em graus Fahrenheit: \n";
@@ -72,6 +84,8 @@ int main()
 	std::cout << "Amesma temperatura em graus Celsius e: " << 5 * (numF - 32.0)/9.0 << "\n";
 	system("pause");
 	system("cls");
+
+
 
 	std::cout << "08\n"; //8
 
@@ -81,6 +95,8 @@ int main()
 	system("pause");
 	system("cls");
 
+
+
 	std::cout << "08\n"; //9
 
 	std::cout << "Digite a velocidade em m/s: \n";
@@ -88,6 +104,8 @@ int main()
 	std::cout << "Amesma Velocidade em Km/H e: " << numF * 3.6 << "\n";
 	system("pause");
 	system("cls");
+
+
 
 	std::cout << "10\n"; //10
 
@@ -109,6 +127,7 @@ int main()
 	system("cls");
 	
 
+
 	std::cout << "Desafio 01\n"; // Morte
 
 	std::cout << "Digite um numero entre 100 e 999 e obtenha sua versão espelhada\n";
@@ -119,18 +138,38 @@ int main()
 	std::cout << numI2 << numI1 << numI;
 	system("pause");
 	system("cls");
-	//
+	
 
 
+	std::cout << "Desafio 02\n"; // Vida
+
+	std::cout << "Digite a Hora minuto e Segundo do inicio da experiencia \n";
+	std::cout << "Hora: ";
+	std::cin >> numI;
+	
+	std::cout << "Minutos: ";
+	std::cin >> numI1;
+
+	std::cout << "segundos: ";
+	std::cin >> numI2;
+
+	std::cout << "Digite o tempo da experiencia em segundos: ";
+	std::cin >> numI3;
+
+	res = (numI * 60 * 60) + (numI1 * 60) + (numI2) + (numI3);
+
+	system("cls");
+
+	std::cout << "Inicio da experiencia: " << numI << ":" << numI1 << ":" << numI2 << "\n";
+	std::cout << "Duracao do experimento: " << numI3 << "segundos.\n";
+	numI  =  res / 60 / 60;
+	numI1 = (res - (numI * 60 * 60)) / 60;
+	numI2 = (res - ((numI * 60 * 60) + (numI1 * 60)));
+	std::cout << "Fim da experiencia: " << numI << ":" << numI1 << ":" << numI2 << "\n";
+
+	system("pause");
+	system("cls");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

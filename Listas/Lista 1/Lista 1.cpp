@@ -6,7 +6,7 @@ float numF, numF1, numF2, numF3;
 int main()
 {
 	numI = numI1 = numI2 = numF = numF1 = numF2 = numF3 = 0;
-	/*
+	
 	std::cout << "01\n"; //01
 
 	std::cout << "Digite um numero inteiro!\n";
@@ -119,7 +119,7 @@ int main()
 	std::cout << numI2 << numI1 << numI;
 	system("pause");
 	system("cls");
-	*/
+	
 
 
 }

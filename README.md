@@ -1,2 +1,2 @@
-# Lista-de-exercicios-01
+# Cursinho em C++
 c++

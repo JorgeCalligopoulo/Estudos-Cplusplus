@@ -1,20 +1,23 @@
 // Lista 2_03.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// faça um programa que leia um numero inteiro e diga se ele é par ou impar
 
 #include <iostream>
+using namespace std;//...
+
+int num; // define a variavel como inteira
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Digite um numero inteiro!\n"; // msg ao usuario
+    cin >> num; // grava um numero na memoria
+	if ((num/2) != (num / 2.00)) // verifica se ((numero/2) é diferente de (numero/2.00) se sim quer dizer que a segunda divisão deu numero quebrado
+	{
+		cout << "O numero e impar\n"; // mensagem ao usuario caso o numero seja impa 
+	}
+	else
+	{
+		cout << "o numero e par\n"; // //
+	} 
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

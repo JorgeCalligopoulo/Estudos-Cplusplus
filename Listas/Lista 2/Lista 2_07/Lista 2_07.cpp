@@ -30,6 +30,7 @@ int main()
 	case 3:
 		cout << "todos iguais\n";
 		break;
+
 	default:
 		break;
 	}

@@ -1,20 +1,35 @@
-// P 04.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/* P 04.cpp : This file contains the 'main' function. Program execution begins and ends there.
+
+Faça um programa que tenha uma função a qual recebe dois valores X e Z. 
+Calcule e retorne o resultado de . 
+Dentro da função que você criou, utilize a função de potência da biblioteca matemática do C++ para o cálculo.
+
+
+*/
 
 #include <iostream>
+#include <math.h>
+
+void potencia(int base, int elevado);
+
+int x, z;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "De o valor de X: ";
+    std::cin >> x;
+    std::cout << "De o valor de Z: ";
+    std::cin >> z;
+    potencia(x, z);
+
+
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void potencia(int base, int elevado)
+{
+
+    std::cout << "Resultado e: " << pow(base, elevado) << std::endl;
+
+}

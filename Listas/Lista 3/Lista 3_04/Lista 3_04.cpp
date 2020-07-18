@@ -8,7 +8,7 @@ os números pares de 0 até N em ordem crescente.
 
 int contagem(int num);
 
-int num = 0;
+int num = 0; //variavel que armazena o numero digitado
 
 int main()
 {
@@ -18,8 +18,8 @@ int main()
 	contagem(num);
 	return 0;
 }
-
-int contagem(int numero)
+ 
+int contagem(int numero) //funçao responsavel por contar os positivos ate o valor desejado
 {
 	for (int passo = 0; numero >= passo; passo += 2)
 	{

@@ -14,6 +14,7 @@ int main()
     std::cout << "digite um numero: \n";
     std::cin >> num;
     verificar(num);
+    return 0;
 }
 
 void verificar(float num)

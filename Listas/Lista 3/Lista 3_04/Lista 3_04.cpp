@@ -21,11 +21,9 @@ int main()
 
 int contagem(int numero)
 {
-	int passo = 0;
-	for (int i = 0; numero >= passo; i++)
+	for (int passo = 0; numero >= passo; passo += 2)
 	{
 		std::cout << passo << std::endl;
-		passo += 2;
 	}
 	return 0;
 }

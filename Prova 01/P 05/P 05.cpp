@@ -27,15 +27,15 @@ void triangulo(int tam)
 
 	for (tam; tam > 0; tam--)
 	{
-		cont = tam - 1;
+		cont = tam - 1; //gerencia o espaçamento
 		while (cont > 0)
 		{
 			std::cout << " ";
 			cont--;
 		}
 
-		cont = cont1;
-		while (cont > 0)
+		cont = cont1; 
+		while (cont > 0) //gerencia o numero de estrelas
 		{
 			std::cout << "*";
 			cont--;

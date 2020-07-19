@@ -8,6 +8,9 @@ e 2.
 */
 
 #include <iostream>
+
+void calcular();
+
 float nota, nota1, nota2;
 char k;
 
@@ -19,10 +22,10 @@ int main()
     std::cin >> nota1;
     std::cout << "Terceira nota";
     std::cin >> nota2;
-    std::cout << "Escolha Media:\nA-Aritmetica \nP-Ponderada";
+    std::cout << "Escolha Media:\nA-Aritmetica \nP-Ponderada \n:";
     std::cin >> k;
 
-    calcular()
+    calcular();
 
 
 }
@@ -35,7 +38,7 @@ void calcular()
     }
     else
     {
-        std::cout << "Media aritmetica: " << ((nota) + (nota1) + (nota2) / 3;
+        std::cout << "Media Ponderada: " << ((5*nota) + (3*nota1) + (2*nota2)) / 10;
     }
 
 }

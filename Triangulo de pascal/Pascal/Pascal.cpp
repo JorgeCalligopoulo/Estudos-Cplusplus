@@ -1,4 +1,4 @@
-// limite da piramide 12
+// limite da piramide 13
 //
 
 #include <iostream>
@@ -11,7 +11,7 @@ int size,space;
 int main()
 {
     
-    std::cout <<"Digite o tamanho da piramide (Limite 12)\nTamanho: ";
+    std::cout <<"Digite o tamanho da piramide (Limite 13)\nTamanho: ";
     std::cin >> size;
     space = size;
 

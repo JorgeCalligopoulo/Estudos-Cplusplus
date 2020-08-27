@@ -1,2 +1,1 @@
-# Cursinho em C++
-c++
+# Estudos em C++
